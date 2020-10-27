@@ -1,29 +1,19 @@
 module.exports = {
   mount: {
-    public: '/',
-    src: '/_dist_',
+    public: "/",
+    src: "/_dist_",
   },
   plugins: [
-    '@snowpack/plugin-vue',
-    '@snowpack/plugin-vue/plugin-tsx-jsx.js',
-    '@snowpack/plugin-dotenv',
+    "@snowpack/plugin-vue",
+    [
+      "snowpack-plugin-import-map",
+      {
+        imports: {
+          "*": true,
+          vue: "https://cdn.skypack.dev/vue@^3.0.0",
+        },
+        dev: true,
+      },
+    ],
   ],
-  install: [
-    /* ... */
-  ],
-  installOptions: {
-    /* ... */
-  },
-  devOptions: {
-    /* ... */
-  },
-  buildOptions: {
-    /* ... */
-  },
-  proxy: {
-    /* ... */
-  },
-  alias: {
-    /* ... */
-  },
 };
