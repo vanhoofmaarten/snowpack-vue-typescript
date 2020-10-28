@@ -6,7 +6,6 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@egoist/vue-head": "^0.1.8",
     "vue": "^3.0.2",
     "vue-router": "^4.0.0-rc.1"
   },

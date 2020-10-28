@@ -10,9 +10,10 @@ module.exports = {
       {
         imports: {
           "*": true,
-          vue: "https://cdn.skypack.dev/vue@^3.0.0",
+          vue: "https://cdn.skypack.dev/vue@^3.0.0?min",
+          "vue-router": "https://cdn.skypack.dev/vue-router@next?min",
         },
-        dev: true,
+        dev: true
       },
     ],
   ],
